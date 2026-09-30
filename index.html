@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AST Group — produtos naturais selecionados com qualidade.">
+  <title>AST Group | Produtos Naturais</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="logo" href="#inicio"><span>AST</span> GROUP</a>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="cart-button" id="openCart" aria-label="Abrir carrinho">
+        🛒 <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">AST GROUP • QUALIDADE NATURAL</p>
+          <h1>Natureza selecionada para fazer parte da sua rotina.</h1>
+          <p class="hero-text">
+            Conheça nossa linha de produtos naturais selecionados com foco em qualidade,
+            praticidade e uma experiência de compra simples.
+          </p>
+          <a class="primary-button" href="#produtos">Ver produtos</a>
+        </div>
+        <div class="hero-card">
+          <div class="leaf">🌿</div>
+          <strong>Seleção AST</strong>
+          <span>Produtos naturais</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <div><b>🌱</b><span>Produtos selecionados</span></div>
+        <div><b>📦</b><span>Envio para todo o Brasil</span></div>
+        <div><b>🔒</b><span>Compra segura</span></div>
+      </div>
+    </section>
+
+    <section class="products-section" id="produtos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">NOSSA SELEÇÃO</p>
+          <h2>Produtos em destaque</h2>
+          <p>Escolha um produto para adicionar ao carrinho.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image">🌿</div>
+            <div class="product-info">
+              <span class="tag">DESTAQUE</span>
+              <h3>Ginseng Premium</h3>
+              <p>Produto natural selecionado para sua rotina.</p>
+              <div class="product-bottom">
+                <strong>R$ 79,90</strong>
+                <button class="add-button" data-name="Ginseng Premium" data-price="79.90">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">🍃</div>
+            <div class="product-info">
+              <span class="tag">NATURAL</span>
+              <h3>Ginseng 60 cápsulas</h3>
+              <p>Praticidade para o uso diário, com embalagem moderna.</p>
+              <div class="product-bottom">
+                <strong>R$ 59,90</strong>
+                <button class="add-button" data-name="Ginseng 60 cápsulas" data-price="59.90">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">🌱</div>
+            <div class="product-info">
+              <span class="tag">SELECIONADO</span>
+              <h3>Ginseng 120 cápsulas</h3>
+              <p>Uma opção para quem procura maior quantidade.</p>
+              <div class="product-bottom">
+                <strong>R$ 99,90</strong>
+                <button class="add-button" data-name="Ginseng 120 cápsulas" data-price="99.90">Adicionar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">SOBRE A AST GROUP</p>
+          <h2>Qualidade, simplicidade e confiança.</h2>
+        </div>
+        <p>
+          A AST Group nasce com a proposta de oferecer produtos naturais selecionados
+          em uma experiência digital simples e profissional. Esta página é uma base
+          inicial da loja e pode receber novos produtos, imagens, pagamentos e integrações.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">FALE CONOSCO</p>
+          <h2>Precisa de ajuda?</h2>
+          <p>Entre em contato para informações sobre produtos e pedidos.</p>
+        </div>
+        <a class="primary-button" href="mailto:contato@astgroup.com">Enviar e-mail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>© 2026 AST Group</span>
+      <span>Produtos naturais • Qualidade e praticidade</span>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay">
+    <aside class="cart">
+      <div class="cart-header">
+        <h2>Seu carrinho</h2>
+        <button id="closeCart" aria-label="Fechar">×</button>
+      </div>
+      <div id="cartItems" class="cart-items">
+        <p class="empty">Seu carrinho está vazio.</p>
+      </div>
+      <div class="cart-footer">
+        <div><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+        <button class="checkout-button" id="checkout">Finalizar pedido</button>
+        <small>O pagamento será integrado posteriormente.</small>
+      </div>
+    </aside>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
